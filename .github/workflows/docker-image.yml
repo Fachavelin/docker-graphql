@@ -24,7 +24,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
-    - name: Build Cocker image
+    - name: Build Docker image
       run: |
         docker build -t rockoch/docker-graphql:0.0.1 .
 
